@@ -25,20 +25,20 @@ value=".option wnflag=1
 }
 C {madvlsi/vdd.sym} 350 -240 0 0 {name=l1 lab=VDD}
 C {madvlsi/gnd.sym} 350 -60 0 0 {name=l2 lab=GND}
-C {madvlsi/vsource.sym} 50 -340 0 0 {name=Vdd
+C {madvlsi/vsource.sym} 50 -340 0 0 {name=VDD
 value=1.8}
 C {madvlsi/vdd.sym} 50 -370 0 0 {name=l3 lab=VDD}
 C {madvlsi/gnd.sym} 50 -310 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 300 -190 0 0 {name=l5 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 300 -170 0 0 {name=l6 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 480 -180 2 0 {name=l11 sig_type=std_logic lab=Vout}
-C {devices/code_shown.sym} 590 -110 0 0 {name=SPICE only_toplevel=false value=".tran 0.01n 1u
+C {devices/code_shown.sym} 590 -110 0 0 {name=SPICE only_toplevel=false value=".tran 0.01n 1us
 .save all"}
 C {/home/madvlsi/Desktop/madvlsi/MP1/and.sym} 280 -130 0 0 {name=X1}
-C {madvlsi/vsource.sym} 50 -210 0 0 {name=A
-value=1.8}
-C {madvlsi/vsource.sym} 50 -90 0 0 {name=B
-value=1.8}
+C {madvlsi/vsource.sym} 50 -210 0 0 {name=VA
+value="pulse(0 1.8 1ns 1ns 1ns 4ns 10ns)"}
+C {madvlsi/vsource.sym} 50 -90 0 0 {name=VB
+value="pulse(0 1.8 1ns 1ns 1ns 4ns 10ns)"}
 C {madvlsi/gnd.sym} 50 -180 0 0 {name=l7 lab=GND}
 C {madvlsi/gnd.sym} 50 -60 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 50 -240 0 0 {name=l9 sig_type=std_logic lab=A}

@@ -4,7 +4,7 @@ K {}
 V {}
 S {}
 E {}
-C {/home/madvlsi/Desktop/MP1/buffer.sym} 190 -230 0 0 {name=X1}
+C {/home/madvlsi/Desktop/madvlsi/MP1/buffer.sym} 190 -230 0 0 {name=X1}
 C {madvlsi/tt_models.sym} 390 -325 0 0 {
 name=TT_MODELS
 only_toplevel=false

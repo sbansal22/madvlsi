@@ -10,7 +10,6 @@ N 320 -280 320 -260 { lab=Y}
 N 240 -260 240 -240 { lab=Y}
 N 160 -360 160 -310 { lab=VP}
 N 320 -360 320 -310 { lab=VP}
-N 240 -210 240 -170 { lab=#net1}
 N 240 -170 240 -150 { lab=#net1}
 N 240 -120 240 -70 { lab=VN}
 N 320 -260 370 -260 { lab=Y}
@@ -19,12 +18,14 @@ N 110 -260 110 -210 { lab=A}
 N 110 -310 110 -260 { lab=A}
 N 110 -310 130 -310 { lab=A}
 N 70 -260 110 -260 { lab=A}
-N 270 -120 420 -120 { lab=xxx}
-N 420 -310 420 -120 { lab=xxx}
-N 350 -310 420 -310 { lab=xxx}
-N 420 -220 470 -220 { lab=xxx}
+N 270 -120 420 -120 { lab=B}
+N 420 -310 420 -120 { lab=B}
+N 350 -310 420 -310 { lab=B}
+N 420 -220 470 -220 { lab=B}
 N 160 -360 320 -360 { lab=VP}
 N 240 -390 240 -360 { lab=VP}
+N 240 -210 330 -210 { lab=VN}
+N 240 -180 240 -170 { lab=#net1}
 C {madvlsi/pmos4.sym} 160 -310 0 0 {name=M1
 L=0.15
 W=1
@@ -86,3 +87,4 @@ C {devices/iopin.sym} 240 -390 3 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 240 -70 1 0 {name=p3 lab=VN}
 C {devices/ipin.sym} 70 -260 0 0 {name=p4 lab=A}
 C {devices/ipin.sym} 470 -220 2 0 {name=p5 lab=B}
+C {devices/iopin.sym} 330 -210 0 0 {name=p6 lab=VN}

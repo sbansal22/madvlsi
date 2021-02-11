@@ -16,11 +16,11 @@ N 130 -210 130 -190 { lab=VP}
 N 130 -70 130 -60 { lab=VN}
 N 60 -140 80 -140 { lab=A}
 N 60 -120 80 -120 { lab=B}
-N 210.625 -130 260 -130 {}
+N 210.625 -130 260 -130 { lab=#net1}
 C {devices/ipin.sym} 60 -140 0 0 {name=p1 lab=A}
 C {devices/ipin.sym} 60 -120 0 0 {name=p2 lab=B}
 C {devices/iopin.sym} 130 -210 3 0 {name=p3 lab=VP}
 C {devices/iopin.sym} 130 -60 1 0 {name=p4 lab=VN}
 C {devices/opin.sym} 370 -130 0 0 {name=p5 lab=Y}
-C {/home/madvlsi/Desktop/madvlsi/MP1/inverter.sym} 220 -130 0 0 {name=X1}
+C {/home/madvlsi/Desktop/madvlsi/MP1/inverter.sym} 240 -130 0 0 {name=X1}
 C {/home/madvlsi/Desktop/madvlsi/MP1/nand.sym} 60 -80 0 0 {name=X2}
