@@ -1,0 +1,21 @@
+* SPICE3 file created from and.ext - technology: sky130A
+
+.subckt inverter A Y VP VN
+X0 Y A VP VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 Y A VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+.ends
+
+.subckt nand A Y B VP VN
+X0 VP B Y VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 Y B a_30_n140# VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X2 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 a_30_n140# A VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+.ends
+
+
+* Top level circuit and
+
+Xinverter_0 nand_0/Y Y VP VN inverter
+Xnand_0 A nand_0/Y B VP VN nand
+.end
+
