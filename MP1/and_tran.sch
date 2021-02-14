@@ -32,13 +32,13 @@ C {madvlsi/gnd.sym} 40 -310 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 360 -300 0 0 {name=l5 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 360 -280 0 0 {name=l6 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 540 -290 2 0 {name=l11 sig_type=std_logic lab=Vout}
-C {devices/code_shown.sym} 650 -220 0 0 {name=SPICE only_toplevel=false value=".tran 0.1n 30n
+C {devices/code_shown.sym} 650 -220 0 0 {name=SPICE only_toplevel=false value=".tran 0.1n 25n
 .save all"}
 C {/home/madvlsi/Desktop/madvlsi/MP1/and.sym} 340 -240 0 0 {name=X1}
 C {madvlsi/vsource.sym} 40 -210 0 0 {name=VA
-value="pwl(0 0 10ns 0 10.1ns 1.8 20ns 1.8 20.1ns 0 30ns 0)"}
+value="pwl(0 0 10ns 0 10.1ns 1.8 20ns 1.8 20.1ns 0 25ns 0)"}
 C {madvlsi/vsource.sym} 40 -90 0 0 {name=VB
-value="pwl(0 0 5ns 0 5.01ns 1.8 10ns 1.8 10.01ns 0 15ns 0 15.1ns 1.8 20ns 1.8 20.01ns 0 30ns 0)"}
+value="pwl(0 0 5ns 0 5.01ns 1.8 10ns 1.8 10.01ns 0 15ns 0 15.1ns 1.8 20ns 1.8 20.01ns 0 25ns 0)"}
 C {madvlsi/gnd.sym} 40 -180 0 0 {name=l7 lab=GND}
 C {madvlsi/gnd.sym} 40 -60 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 40 -240 0 0 {name=l9 sig_type=std_logic lab=A}
