@@ -1,0 +1,121 @@
+timestamp 1614594123
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use csrl csrl_0 1 0 90 0 1 30
+use csrl csrl_1 1 0 720 0 1 30
+use csrl csrl_2 1 0 1350 0 1 30
+use csrl csrl_3 1 0 1980 0 1 30
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "csrl_0/VN" "csrl_1/Qn" 29.7
+cap "csrl_0/CLK" "csrl_1/Q" 78.3868
+cap "csrl_0/Q" "csrl_1/a_80_850#" 21.7558
+cap "csrl_0/Q" "csrl_0/VN" 29.7
+cap "csrl_0/VN" "csrl_1/a_80_850#" 39.2143
+cap "csrl_0/Q" "csrl_0/VP" 1.17857
+cap "csrl_1/Q" "csrl_2/a_80_850#" 13.7896
+cap "csrl_2/VP" "csrl_1/Q" 0.5
+cap "csrl_2/a_80_1350#" "csrl_1/Qn" 5.06486
+cap "csrl_1/Q" "csrl_1/VP" 1.17857
+cap "csrl_0/a_80_850#" "csrl_0/VN" 18
+cap "csrl_0/CLK" "csrl_0/Qn" 47.2216
+cap "csrl_1/Q" "csrl_0/VN" 29.7
+cap "csrl_0/CLK" "csrl_1/Qn" 41.0293
+cap "csrl_2/a_80_1350#" "csrl_0/VN" 11.0982
+cap "csrl_0/CLK" "csrl_0/Q" 93.0812
+cap "csrl_1/a_80_1350#" "csrl_0/Qn" 10.1297
+cap "csrl_2/a_80_850#" "csrl_1/Qn" 21.4981
+cap "csrl_0/CLK" "csrl_0/VN" -1.13687e-13
+cap "csrl_0/a_80_1350#" "csrl_0/VN" 18
+cap "csrl_1/Q" "csrl_2/a_80_1350#" 25.7568
+cap "csrl_1/a_80_1350#" "csrl_0/Q" 51.5135
+cap "csrl_2/a_80_850#" "csrl_0/VN" 10.6071
+cap "csrl_0/Qn" "csrl_0/VN" 29.7
+cap "csrl_0/Qn" "csrl_1/a_80_850#" 31.2982
+cap "csrl_1/a_80_1350#" "csrl_0/VN" 40.1964
+cap "csrl_1/VP" "csrl_0/Q" 1
+cap "csrl_2/a_80_1350#" "csrl_1/Qn" 5.06486
+cap "csrl_2/a_80_1350#" "csrl_1/Q" 25.7568
+cap "csrl_1/CLK" "csrl_1/CLK" 11.1271
+cap "csrl_1/VN" "csrl_2/Q" 29.7
+cap "csrl_1/VN" "csrl_2/Qn" 29.7
+cap "csrl_2/Q" "csrl_3/VP" 1
+cap "csrl_2/Q" "csrl_1/CLK" 93.0812
+cap "csrl_3/a_80_1350#" "csrl_1/VN" 22.1964
+cap "csrl_1/CLK" "csrl_2/Qn" 47.2216
+cap "csrl_1/Qn" "csrl_1/CLK" 7.44789
+cap "csrl_3/a_80_850#" "csrl_2/Q" 21.7558
+cap "csrl_1/VN" "csrl_2/a_80_1350#" 29.0982
+cap "csrl_1/Q" "csrl_1/CLK" 16.6111
+cap "csrl_3/a_80_850#" "csrl_2/Qn" 31.2982
+cap "csrl_1/Qn" "csrl_2/a_80_850#" 15.4271
+cap "csrl_1/Q" "csrl_2/a_80_850#" 10.7161
+cap "csrl_1/VN" "csrl_1/CLK" -2.27374e-13
+cap "csrl_1/VN" "csrl_3/a_80_850#" 21.2143
+cap "csrl_1/VN" "csrl_2/a_80_850#" 28.6071
+cap "csrl_2/VP" "csrl_2/Q" 1.17857
+cap "csrl_3/a_80_1350#" "csrl_2/Q" 51.5135
+cap "csrl_3/a_80_1350#" "csrl_2/Qn" 10.1297
+cap "csrl_2/VP" "csrl_1/Q" 0.5
+cap "csrl_1/CLK" "csrl_0/Q" 20.3462
+cap "csrl_0/CLK" "csrl_1/CLK" 30.7187
+cap "csrl_0/Q" "csrl_0/VP" 25.4029
+cap "csrl_1/a_80_850#" "csrl_0/Q" 6.94737
+cap "csrl_2/CLK" "csrl_1/Qn" 6.43803
+cap "csrl_1/Q" "csrl_2/CLK" 10.1731
+cap "csrl_0/Qn" "csrl_1/CLK" 1.76923
+cap "csrl_1/a_80_1350#" "csrl_0/Q" 71.9084
+cap "csrl_1/a_80_850#" "csrl_2/a_80_1350#" 5.5
+cap "csrl_1/Q" "csrl_2/a_80_850#" 3.47368
+cap "csrl_1/CLK" "csrl_0/Qn" 12.8761
+cap "csrl_1/Q" "csrl_2/a_80_1350#" 35.9542
+cap "csrl_1/Qn" "csrl_2/a_80_1350#" 28.2051
+cap "csrl_2/a_80_850#" "csrl_1/Qn" 32.1128
+cap "csrl_1/Qn" "csrl_2/CLK" 0.884615
+cap "csrl_2/CLK" "csrl_1/CLK" 15.3594
+cap "csrl_1/Q" "csrl_0/VP" 19.4029
+cap "csrl_1/Qn" "csrl_0/VP" 21.0814
+cap "csrl_0/Qn" "csrl_0/VP" 27.5814
+cap "csrl_1/a_80_850#" "csrl_0/Qn" 64.2256
+cap "csrl_1/a_80_1350#" "csrl_0/a_80_850#" 11
+cap "csrl_1/a_80_1350#" "csrl_0/Qn" 56.4103
+cap "csrl_3/a_80_1350#" "csrl_2/Q" 71.9084
+cap "csrl_1/Q" "csrl_2/a_80_1350#" 35.9542
+cap "csrl_1/VP" "csrl_1/Qn" 6.5
+cap "csrl_2/a_80_850#" "csrl_1/Qn" 32.1128
+cap "csrl_1/VP" "csrl_2/Qn" 27.5814
+cap "csrl_2/CLK" "csrl_1/Qn" 0.884615
+cap "csrl_2/a_80_1350#" "csrl_1/Qn" 28.2051
+cap "csrl_3/CLK" "csrl_2/Qn" 1.76923
+cap "csrl_3/CLK" "csrl_2/Q" 20.3462
+cap "csrl_2/Qn" "csrl_3/a_80_850#" 64.2256
+cap "csrl_1/Q" "csrl_2/CLK" 10.1731
+cap "csrl_3/a_80_1350#" "csrl_2/a_80_850#" 11
+cap "csrl_1/CLK" "csrl_2/CLK" 15.3594
+cap "csrl_1/VP" "csrl_2/Q" 25.4029
+cap "csrl_3/a_80_1350#" "csrl_2/Qn" 56.4103
+cap "csrl_2/CLK" "csrl_1/Qn" 6.43803
+cap "csrl_1/a_80_850#" "csrl_2/a_80_1350#" 5.5
+cap "csrl_3/a_80_850#" "csrl_2/Q" 6.94737
+cap "csrl_1/Q" "csrl_1/VP" 6
+cap "csrl_1/Q" "csrl_2/a_80_850#" 3.47368
+cap "csrl_2/CLK" "csrl_3/CLK" 30.7187
+cap "csrl_3/CLK" "csrl_2/Qn" 12.8761
+merge "csrl_3/VN" "csrl_2/VN" -155.79 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 -1320 0 0 0 0 0 0 0 0 0 0
+merge "csrl_2/VN" "csrl_1/VN"
+merge "csrl_1/VN" "csrl_0/VN"
+merge "csrl_0/VN" "VSUBS"
+merge "csrl_1/Dn" "csrl_0/Qn" -33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_3/VP" "csrl_2/VP" -43.68 0 0 0 0 66600 -6720 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11400 -1260 0 0 0 0 0 0 0 0 0 0
+merge "csrl_2/VP" "csrl_1/VP"
+merge "csrl_1/VP" "csrl_0/VP"
+merge "csrl_2/Dn" "csrl_1/Qn" -28.56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_3/D" "csrl_2/Q" -31.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 400 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_3/CLK" "csrl_2/CLK" -25.005 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 -360 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_2/CLK" "csrl_1/CLK"
+merge "csrl_1/CLK" "csrl_0/CLK"
+merge "csrl_1/D" "csrl_0/Q" -31.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 400 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_3/Dn" "csrl_2/Qn" -33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_2/D" "csrl_1/Q" -34.11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2000 -120 0 0 0 0 0 0 0 0 0 0 0 0
