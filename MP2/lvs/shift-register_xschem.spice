@@ -1,23 +1,9 @@
-**.subckt shift-register
+**.subckt shift-register-lvs-copy
 X1 Q0 Qn0 D net1 VN CLK VP csrl
 X2 Q1 Qn1 Q0 Qn0 VN CLK VP csrl
 X3 Q2 Qn2 Q1 Qn1 VN CLK VP csrl
 X4 Q3 Qn3 Q2 Qn2 VN CLK VP csrl
 X5 D net1 VP VN inverter
-Vin D VN pwl(0 0 25n 0 26n 1.8 40n 1.8 41n 0)
-VCLK CLK VN pulse(0 1.8 1n 1n 1n 4n 10n)
-VP VP VN 1.8
-**** begin user architecture code
-
-.option wnflag=1
-.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt
-
-
-.ic v(Q0)=0 v(Q1)=0 v(Q2)=0 v(Q3)=0
-.tran 0.01n 100n
-.save all
-
-**** end user architecture code
 **.ends
 
 * expanding   symbol:  /home/madvlsi/Desktop/madvlsi/MP2/csrl.sym # of pins=7
