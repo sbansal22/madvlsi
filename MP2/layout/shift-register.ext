@@ -1,142 +1,141 @@
-timestamp 1614679244
+timestamp 1614680607
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use csrl csrl_0 1 0 90 0 1 30
-use csrl csrl_1 1 0 720 0 1 30
-use csrl csrl_2 1 0 1350 0 1 30
-use csrl csrl_3 1 0 1980 0 1 30
 use inverter-skinny inverter-skinny_0 1 0 90 0 1 30
+use csrl csrl_3 1 0 1980 0 1 30
+use csrl csrl_2 1 0 1350 0 1 30
+use csrl csrl_1 1 0 720 0 1 30
+use csrl csrl_0 1 0 90 0 1 30
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "csrl_0/VN" "csrl_1/Qn" 14.85
-cap "csrl_0/Q" "csrl_1/VP" 1
-cap "csrl_0/VP" "csrl_0/Q" 1.17857
-cap "csrl_0/VN" "csrl_0/D" 1.375
-cap "csrl_0/CLK" "csrl_1/Qn" 15.2139
-cap "csrl_0/a_80_1350#" "csrl_0/D" 6.24084
-cap "csrl_0/VN" "csrl_1/Q" -4.4
-cap "csrl_0/VN" "csrl_0/a_80_1350#" 41.9535
-cap "csrl_0/CLK" "csrl_0/D" 31.3709
-cap "csrl_0/VN" "csrl_1/a_80_1350#" 31.1964
-cap "csrl_2/a_80_1350#" "csrl_1/Qn" 3.60222
-cap "csrl_0/VN" "csrl_0/CLK" -5.11591e-13
-cap "csrl_0/VN" "csrl_1/a_80_850#" 30.2143
-cap "csrl_2/a_80_850#" "csrl_1/Qn" 8.33365
-cap "csrl_0/VN" "csrl_0/Q" 29.7
-cap "csrl_0/Q" "csrl_1/a_80_1350#" 51.5135
-cap "csrl_2/a_80_850#" "csrl_1/Q" 0.515625
-cap "csrl_0/CLK" "csrl_0/Q" 93.0812
-cap "csrl_0/Q" "csrl_1/a_80_850#" 21.7558
-cap "csrl_0/VN" "csrl_0/Qn" 29.7
-cap "csrl_0/a_80_850#" "csrl_0/D" 5.60877
-cap "csrl_0/VN" "csrl_0/a_80_850#" 92.5316
+cap "csrl_1/D" "inverter-skinny_0/VN" 29.7
+cap "csrl_0/Qn" "inverter-skinny_0/VN" 29.7
+cap "inverter-skinny_0/CLK" "csrl_1/Qn" 15.2139
+cap "csrl_2/D" "inverter-skinny_0/VN" -4.4
+cap "csrl_1/Qn" "csrl_2/a_80_1350#" 3.60222
+cap "csrl_1/Qn" "inverter-skinny_0/VN" 14.85
+cap "csrl_0/VP" "inverter-skinny_0/D" 0.970588
+cap "csrl_1/a_80_1350#" "inverter-skinny_0/VN" 31.1964
+cap "csrl_0/VP" "csrl_1/D" 1.17857
+cap "csrl_1/a_80_1350#" "csrl_1/D" 51.5135
+cap "csrl_0/a_80_850#" "inverter-skinny_0/D" 5.60877
+cap "csrl_2/D" "csrl_2/a_80_850#" 0.515625
+cap "csrl_1/D" "csrl_1/VP" 1
+cap "csrl_0/a_80_850#" "inverter-skinny_0/VN" 92.5316
 cap "csrl_1/a_80_1350#" "csrl_0/Qn" 10.1297
-cap "csrl_0/VP" "csrl_0/D" 0.970588
-cap "csrl_0/CLK" "csrl_0/Qn" 47.2216
-cap "csrl_1/Q" "csrl_2/a_80_1350#" 6.99431
-cap "csrl_1/Q" "csrl_1/VP" 0.589286
-cap "csrl_0/Qn" "csrl_1/a_80_850#" 31.2982
-cap "csrl_2/a_80_850#" "csrl_1/Q" 21.7558
-cap "csrl_1/CLK" "csrl_1/Q" 93.0812
-cap "csrl_1/VN" "csrl_1/Qn" 14.85
-cap "csrl_2/a_80_1350#" "csrl_1/Q" 46.303
-cap "csrl_3/a_80_1350#" "csrl_2/Qn" 10.1297
-cap "csrl_1/VN" "csrl_2/a_80_850#" 39.2143
-cap "csrl_1/VN" "csrl_1/CLK" -5.40012e-13
-cap "csrl_3/a_80_1350#" "csrl_2/Q" 51.5135
-cap "csrl_1/VN" "csrl_2/a_80_1350#" 40.1964
-cap "csrl_1/VN" "csrl_1/a_80_850#" 9
-cap "csrl_2/Qn" "csrl_3/a_80_850#" 31.2982
-cap "csrl_2/Qn" "csrl_1/VN" 29.7
-cap "csrl_3/a_80_1350#" "csrl_1/VN" 22.1964
-cap "csrl_2/Q" "csrl_3/a_80_850#" 21.7558
-cap "csrl_1/Qn" "csrl_2/a_80_850#" 26.2542
-cap "csrl_1/CLK" "csrl_1/Qn" 35.2793
-cap "csrl_1/VN" "csrl_2/Q" 29.7
-cap "csrl_1/VP" "csrl_1/Q" 0.589286
-cap "csrl_1/VN" "csrl_1/Q" 14.85
+cap "inverter-skinny_0/CLK" "inverter-skinny_0/VN" -5.11591e-13
+cap "inverter-skinny_0/CLK" "inverter-skinny_0/D" 31.3709
+cap "inverter-skinny_0/CLK" "csrl_1/D" 93.0812
+cap "inverter-skinny_0/CLK" "csrl_0/Qn" 47.2216
+cap "csrl_2/D" "csrl_1/VP" 0.589286
+cap "csrl_1/a_80_850#" "inverter-skinny_0/VN" 30.2143
+cap "csrl_2/D" "csrl_2/a_80_1350#" 6.99431
+cap "csrl_0/a_80_1350#" "inverter-skinny_0/VN" 41.9535
+cap "csrl_0/a_80_1350#" "inverter-skinny_0/D" 6.24084
+cap "csrl_1/a_80_850#" "csrl_1/D" 21.7558
+cap "csrl_1/Qn" "csrl_2/a_80_850#" 8.33365
+cap "csrl_1/a_80_850#" "csrl_0/Qn" 31.2982
+cap "inverter-skinny_0/VN" "inverter-skinny_0/D" 1.375
+cap "csrl_3/D" "csrl_3/VN" 29.7
+cap "csrl_3/VN" "csrl_2/Qn" 29.7
+cap "csrl_3/D" "csrl_3/VP" 1
+cap "csrl_3/D" "csrl_3/a_80_1350#" 51.5135
 cap "csrl_1/Qn" "csrl_2/a_80_1350#" 7.77074
-cap "csrl_1/VN" "csrl_1/a_80_1350#" 9
-cap "csrl_1/VN" "csrl_3/a_80_850#" 21.2143
-cap "csrl_3/VP" "csrl_2/Q" 1
-cap "csrl_2/Qn" "csrl_1/CLK" 47.2216
-cap "csrl_2/Q" "csrl_2/VP" 1.17857
-cap "csrl_1/Q" "csrl_2/VP" 1
-cap "csrl_1/CLK" "csrl_2/Q" 93.0812
-cap "csrl_0/a_80_850#" "inverter-skinny_0/a_n340_1540#" 3.47368
-cap "csrl_0/VP" "csrl_1/Q" 7.07143
-cap "csrl_0/VP" "csrl_0/Dn" 12.2476
-cap "csrl_1/Q" "csrl_2/a_80_1350#" 18.5534
-cap "csrl_0/D" "csrl_0/a_80_850#" 2.02941
-cap "csrl_1/a_80_1350#" "csrl_0/Q" 71.9084
-cap "csrl_0/VP" "csrl_1/Qn" 7.66071
-cap "csrl_0/VP" "inverter-skinny_0/VN" 5.21053
-cap "csrl_1/CLK" "csrl_0/CLK" 30.7187
+cap "csrl_2/D" "csrl_2/a_80_850#" 21.7558
+cap "csrl_1/Qn" "csrl_3/CLK" 35.2793
+cap "csrl_3/a_80_1350#" "csrl_3/VN" 22.1964
+cap "csrl_3/a_80_1350#" "csrl_2/Qn" 10.1297
+cap "csrl_3/VN" "csrl_1/a_80_850#" 9
+cap "csrl_1/Qn" "csrl_3/VN" 14.85
+cap "csrl_1/VP" "csrl_2/D" 0.589286
+cap "csrl_2/D" "csrl_2/a_80_1350#" 46.303
+cap "csrl_2/D" "csrl_3/CLK" 93.0812
+cap "csrl_3/D" "csrl_2/VP" 1.17857
+cap "csrl_3/VN" "csrl_2/D" 14.85
+cap "csrl_3/VN" "csrl_2/a_80_850#" 39.2143
+cap "csrl_1/a_80_1350#" "csrl_3/VN" 9
+cap "csrl_3/VN" "csrl_2/a_80_1350#" 40.1964
+cap "csrl_3/VN" "csrl_3/CLK" -5.11591e-13
+cap "csrl_3/D" "csrl_3/CLK" 93.0812
+cap "csrl_2/VP" "csrl_2/D" 1
+cap "csrl_3/CLK" "csrl_2/Qn" 47.2216
+cap "csrl_3/VN" "csrl_3/a_80_850#" 21.2143
+cap "csrl_3/D" "csrl_3/a_80_850#" 21.7558
+cap "csrl_1/Qn" "csrl_2/a_80_850#" 26.2542
+cap "csrl_3/a_80_850#" "csrl_2/Qn" 31.2982
+cap "csrl_2/D" "csrl_2/a_80_850#" 3.47368
+cap "inverter-skinny_0/D" "inverter-skinny_0/VP" -0.509412
+cap "csrl_2/D" "csrl_2/a_80_1350#" 18.5534
+cap "csrl_2/D" "csrl_2/CLK" 1.58621
+cap "csrl_1/a_80_1350#" "csrl_1/D" 71.9084
+cap "csrl_1/Dn" "inverter-skinny_0/VP" 27.5814
+cap "csrl_1/CLK" "csrl_1/D" 20.3462
+cap "csrl_2/D" "inverter-skinny_0/VP" 7.07143
+cap "csrl_1/Dn" "csrl_1/a_80_850#" 64.2256
 cap "csrl_0/a_80_1350#" "inverter-skinny_0/a_n340_1540#" 18.4412
-cap "csrl_0/Dn" "inverter-skinny_0/a_n340_2000#" 21.45
-cap "csrl_0/a_80_1350#" "csrl_0/D" 23.5764
-cap "csrl_0/Qn" "csrl_1/CLK" 12.8761
-cap "csrl_0/D" "csrl_0/CLK" 26.5385
-cap "csrl_0/D" "csrl_0/VP" -0.509412
-cap "csrl_1/CLK" "csrl_0/Q" 20.3462
-cap "csrl_0/Dn" "csrl_0/a_80_850#" 20.4286
-cap "csrl_0/a_80_850#" "inverter-skinny_0/a_n340_2000#" 16.5
-cap "csrl_0/Qn" "csrl_0/VP" 27.5814
-cap "csrl_1/Q" "csrl_2/a_80_850#" 3.47368
+cap "csrl_0/a_80_1350#" "inverter-skinny_0/Dn" 76.485
+cap "inverter-skinny_0/a_n340_2000#" "inverter-skinny_0/Dn" 21.45
+cap "csrl_1/CLK" "csrl_2/CLK" 15.3594
+cap "csrl_2/Dn" "inverter-skinny_0/VP" 7.66071
+cap "csrl_0/CLK" "csrl_1/CLK" 30.7187
+cap "csrl_1/D" "inverter-skinny_0/VP" 25.4029
+cap "csrl_0/a_80_850#" "inverter-skinny_0/a_n340_1540#" 3.47368
 cap "csrl_1/a_80_1350#" "csrl_0/a_80_850#" 11
-cap "csrl_0/a_80_850#" "inverter-skinny_0/VN" 5.28
-cap "csrl_1/a_80_850#" "csrl_0/Qn" 64.2256
-cap "csrl_0/VP" "csrl_0/Q" 25.4029
-cap "csrl_0/D" "inverter-skinny_0/VN" 19.375
-cap "csrl_0/Qn" "csrl_1/CLK" 1.76923
-cap "csrl_2/CLK" "csrl_1/CLK" 15.3594
-cap "csrl_2/CLK" "csrl_1/Q" 1.58621
-cap "csrl_1/a_80_850#" "csrl_0/Q" 6.94737
-cap "csrl_0/Qn" "csrl_1/a_80_1350#" 56.4103
-cap "csrl_1/a_80_850#" "csrl_2/a_80_1350#" 5.5
-cap "csrl_0/a_80_1350#" "inverter-skinny_0/VN" 51.5047
-cap "csrl_1/Q" "csrl_2/a_80_850#" 3.47368
-cap "csrl_1/Qn" "csrl_1/VP" 19.9207
-cap "csrl_3/a_80_1350#" "csrl_2/Q" 71.9084
-cap "csrl_2/Qn" "csrl_1/VP" 27.5814
-cap "csrl_1/Q" "csrl_2/CLK" 20.3462
-cap "csrl_3/a_80_850#" "csrl_2/Qn" 64.2256
-cap "csrl_1/VP" "csrl_2/Q" 25.4029
-cap "csrl_1/Qn" "csrl_2/a_80_850#" 64.2256
-cap "csrl_3/a_80_850#" "csrl_2/Q" 6.94737
-cap "csrl_2/Qn" "csrl_3/CLK" 1.76923
-cap "csrl_2/CLK" "csrl_1/Qn" 1.76923
-cap "csrl_2/CLK" "csrl_1/Qn" 12.8761
-cap "csrl_2/Qn" "csrl_3/CLK" 12.8761
-cap "csrl_2/CLK" "csrl_3/CLK" 30.7187
-cap "csrl_2/a_80_1350#" "csrl_1/Q" 57.3173
+cap "inverter-skinny_0/D" "csrl_0/CLK" 26.5385
+cap "csrl_0/a_80_850#" "inverter-skinny_0/Dn" 39.3637
+cap "csrl_1/D" "csrl_1/a_80_850#" 6.94737
+cap "inverter-skinny_0/D" "inverter-skinny_0/Dn" 19.375
+cap "inverter-skinny_0/Dn" "inverter-skinny_0/VP" 17.4582
+cap "csrl_1/Dn" "csrl_1/CLK" 1.76923
+cap "csrl_0/a_80_850#" "inverter-skinny_0/a_n340_2000#" 16.5
+cap "csrl_0/a_80_1350#" "inverter-skinny_0/D" 23.5764
+cap "csrl_1/Dn" "csrl_1/a_80_1350#" 56.4103
+cap "csrl_1/Dn" "csrl_1/CLK" 12.8761
 cap "csrl_2/a_80_1350#" "csrl_1/a_80_850#" 5.5
-cap "csrl_2/Q" "csrl_3/CLK" 20.3462
-cap "csrl_3/a_80_1350#" "csrl_2/a_80_850#" 11
-cap "csrl_1/Q" "csrl_1/VP" 18.3314
+cap "csrl_0/a_80_850#" "inverter-skinny_0/D" 2.02941
+cap "csrl_3/Dn" "csrl_3/VP" 27.5814
+cap "csrl_2/D" "csrl_2/a_80_1350#" 57.3173
+cap "csrl_3/a_80_850#" "csrl_3/D" 6.94737
+cap "csrl_3/Dn" "csrl_3/a_80_1350#" 56.4103
+cap "csrl_2/D" "csrl_2/a_80_850#" 3.47368
+cap "csrl_3/D" "csrl_3/VP" 25.4029
 cap "csrl_2/CLK" "csrl_1/CLK" 15.3594
-cap "csrl_3/a_80_1350#" "csrl_2/Qn" 56.4103
-cap "csrl_2/a_80_1350#" "csrl_1/Qn" 56.4103
-merge "csrl_3/VN" "inverter-skinny_0/VN" -340.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18000 -1720 0 0 0 0 0 0 0 0 0 0
-merge "inverter-skinny_0/VN" "csrl_2/VN"
-merge "csrl_2/VN" "csrl_1/VN"
-merge "csrl_1/VN" "csrl_0/VN"
-merge "csrl_0/VN" "VSUBS"
-merge "csrl_1/Dn" "csrl_0/Qn" -33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -120 0 0 0 0 0 0 0 0 0 0 0 0
-merge "csrl_3/VP" "inverter-skinny_0/VP" -184.475 0 0 0 0 44400 -8990 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17100 -1640 0 0 0 0 0 0 0 0 0 0
-merge "inverter-skinny_0/VP" "csrl_2/VP"
-merge "csrl_2/VP" "csrl_1/VP"
-merge "csrl_1/VP" "csrl_0/VP"
-merge "csrl_2/Dn" "csrl_1/Qn" -27.45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5200 -120 0 0 0 0 0 0 0 0 0 0 0 0
-merge "csrl_3/D" "csrl_2/Q" -31.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 400 -120 0 0 0 0 0 0 0 0 0 0 0 0
-merge "csrl_3/CLK" "inverter-skinny_0/CLK" -117.67 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 -440 0 0 0 0 0 0 0 0 0 0 0 0
-merge "inverter-skinny_0/CLK" "csrl_2/CLK"
-merge "csrl_2/CLK" "csrl_1/CLK"
-merge "csrl_1/CLK" "csrl_0/CLK"
-merge "csrl_1/D" "csrl_0/Q" -31.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 400 -120 0 0 0 0 0 0 0 0 0 0 0 0
-merge "csrl_3/Dn" "csrl_2/Qn" -33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -120 0 0 0 0 0 0 0 0 0 0 0 0
-merge "inverter-skinny_0/Dn" "csrl_0/Dn" -27.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 0 0 0 0 0 0 0 0 0 0 0 0
-merge "inverter-skinny_0/D" "csrl_0/D" -69.835 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 200 -260 0 0 0 0 0 0 0 0 0 0 0 0
-merge "csrl_2/D" "csrl_1/Q" -34.665 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2600 -120 0 0 0 0 0 0 0 0 0 0 0 0
+cap "csrl_1/a_80_850#" "csrl_2/a_80_1350#" 5.5
+cap "csrl_2/a_80_850#" "csrl_3/a_80_1350#" 11
+cap "csrl_2/Dn" "csrl_2/a_80_1350#" 56.4103
+cap "csrl_2/D" "csrl_2/CLK" 20.3462
+cap "csrl_2/CLK" "csrl_2/Dn" 1.76923
+cap "csrl_3/a_80_1350#" "csrl_3/D" 71.9084
+cap "csrl_3/CLK" "csrl_3/Dn" 12.8761
+cap "csrl_2/a_80_850#" "csrl_2/Dn" 64.2256
+cap "csrl_2/CLK" "csrl_3/CLK" 30.7187
+cap "csrl_2/D" "csrl_3/VP" 18.3314
+cap "csrl_2/Dn" "csrl_2/CLK" 12.8761
+cap "csrl_3/Dn" "csrl_3/CLK" 1.76923
+cap "csrl_3/CLK" "csrl_3/D" 20.3462
+cap "csrl_3/a_80_850#" "csrl_3/Dn" 64.2256
+cap "csrl_2/Dn" "csrl_3/VP" 19.9207
+merge "csrl_0/Dn" "csrl_3/VN" -368.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 18000 -1720 0 0 0 0 0 0 0 0 0 0
+merge "csrl_3/VN" "csrl_0/VN"
+merge "csrl_0/VN" "inverter-skinny_0/VN"
+merge "inverter-skinny_0/VN" "csrl_1/VN"
+merge "csrl_1/VN" "csrl_2/VN"
+merge "csrl_2/VN" "inverter-skinny_0/Dn"
+merge "inverter-skinny_0/Dn" "VSUBS"
+merge "csrl_0/Qn" "csrl_1/Dn" -33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_0/VP" "inverter-skinny_0/VP" -184.475 0 0 0 0 44400 -8990 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17100 -1640 0 0 0 0 0 0 0 0 0 0
+merge "inverter-skinny_0/VP" "csrl_1/VP"
+merge "csrl_1/VP" "csrl_2/VP"
+merge "csrl_2/VP" "csrl_3/VP"
+merge "csrl_1/Qn" "csrl_2/Dn" -27.45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5200 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_2/Q" "csrl_3/D" -31.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 400 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_0/CLK" "inverter-skinny_0/CLK" -67.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter-skinny_0/CLK" "csrl_1/CLK"
+merge "csrl_1/CLK" "csrl_2/CLK"
+merge "csrl_2/CLK" "csrl_3/CLK"
+merge "csrl_0/Q" "csrl_1/D" -31.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 400 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_2/Qn" "csrl_3/Dn" -33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_0/D" "inverter-skinny_0/D" -69.835 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 200 -260 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_1/Q" "csrl_2/D" -34.665 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2600 -120 0 0 0 0 0 0 0 0 0 0 0 0
