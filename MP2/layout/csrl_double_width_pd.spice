@@ -1,0 +1,21 @@
+* SPICE3 file created from csrl_double_width_pd.ext - technology: sky130A
+
+.subckt csrl_double_width_pd VP Dn D VN CLK Q Qn
+X0 a_80_1750# a_80_1050# a_80_1240# VN sky130_fd_pr__nfet_01v8 ad=7.5e+11p pd=5e+06u as=5e+11p ps=4.5e+06u w=2e+06u l=150000u
+X1 a_420_540# Qn Q VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X2 a_340_1750# CLK VP VP sky130_fd_pr__pfet_01v8 ad=2.375e+11p pd=2.4e+06u as=9.5e+11p ps=5.8e+06u w=950000u l=150000u
+X3 a_420_540# Q Qn VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X4 a_80_1050# a_80_1750# a_80_340# VN sky130_fd_pr__nfet_01v8 ad=7.5e+11p pd=5e+06u as=5e+11p ps=4.5e+06u w=2e+06u l=150000u
+X5 a_80_340# CLK a_n50_340# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=2e+12p ps=1e+07u w=2e+06u l=150000u
+X6 a_80_1050# CLK Dn VP sky130_fd_pr__pfet_01v8 ad=4.75e+11p pd=2.9e+06u as=4.75e+11p ps=2.9e+06u w=950000u l=150000u
+X7 a_80_1750# CLK D VP sky130_fd_pr__pfet_01v8 ad=4.75e+11p pd=2.9e+06u as=4.75e+11p ps=2.9e+06u w=950000u l=150000u
+X8 Q CLK a_80_1750# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 Qn Q a_340_2400# VP sky130_fd_pr__pfet_01v8 ad=4.75e+11p pd=2.9e+06u as=2.375e+11p ps=2.4e+06u w=950000u l=150000u
+X10 VP a_80_1750# a_80_1050# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=950000u l=150000u
+X11 Q Qn a_340_1750# VP sky130_fd_pr__pfet_01v8 ad=4.75e+11p pd=2.9e+06u as=0p ps=0u w=950000u l=150000u
+X12 a_80_1240# CLK a_n50_340# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X13 VP a_80_1050# a_80_1750# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=950000u l=150000u
+X14 Qn CLK a_80_1050# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X15 a_340_2400# CLK VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=950000u l=150000u
+.ends
+
