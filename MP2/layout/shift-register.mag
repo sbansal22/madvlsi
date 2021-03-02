@@ -1,8 +1,8 @@
 magic
 tech sky130A
-timestamp 1614680607
+timestamp 1614682669
 use inverter-skinny  inverter-skinny_0
-timestamp 1614680190
+timestamp 1614682227
 transform 1 0 45 0 1 15
 box -190 5 -20 1240
 use csrl  csrl_3
