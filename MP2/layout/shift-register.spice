@@ -1,5 +1,11 @@
 * SPICE3 file created from /home/madvlsi/Desktop/madvlsi/MP2/layout/shift-register.ext - technology: sky130A
 
+.subckt inverter-skinny VP D VN CLK Dn
+X0 VN D VN VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=150000u
+X1 VN D a_n340_1540# VP sky130_fd_pr__pfet_01v8 ad=9.75e+11p pd=5.9e+06u as=4.75e+11p ps=2.9e+06u w=950000u l=150000u
+X2 Dn D a_n340_2000# VP sky130_fd_pr__pfet_01v8 ad=4.275e+11p pd=2.8e+06u as=4.75e+11p ps=2.9e+06u w=950000u l=150000u
+.ends
+
 .subckt csrl VP Dn D VN CLK Q Qn
 X0 VP a_80_850# a_80_1350# VP sky130_fd_pr__pfet_01v8 ad=9.5e+11p pd=5.8e+06u as=4.75e+11p ps=2.9e+06u w=950000u l=150000u
 X1 Q CLK a_80_1350# VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
@@ -17,13 +23,12 @@ X12 VN Q Qn VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000
 X13 Qn Q a_340_2000# VP sky130_fd_pr__pfet_01v8 ad=4.75e+11p pd=2.9e+06u as=0p ps=0u w=950000u l=150000u
 X14 VP a_80_1350# a_80_850# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=950000u l=150000u
 X15 Q Qn a_340_1350# VP sky130_fd_pr__pfet_01v8 ad=4.75e+11p pd=2.9e+06u as=0p ps=0u w=950000u l=150000u
-C0 CLK VN 2.84fF
-C1 VP VN 2.79fF
 .ends
 
 
 * Top level circuit /home/madvlsi/Desktop/madvlsi/MP2/layout/shift-register
 
+Xinverter-skinny_0 csrl_3/VP csrl_0/D VSUBS csrl_3/CLK csrl_0/Dn inverter-skinny
 Xcsrl_0 csrl_3/VP csrl_0/Dn csrl_0/D VSUBS csrl_3/CLK csrl_1/D csrl_1/Dn csrl
 Xcsrl_1 csrl_3/VP csrl_1/Dn csrl_1/D VSUBS csrl_3/CLK csrl_2/D csrl_2/Dn csrl
 Xcsrl_2 csrl_3/VP csrl_2/Dn csrl_2/D VSUBS csrl_3/CLK csrl_3/D csrl_3/Dn csrl

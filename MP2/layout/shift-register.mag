@@ -1,21 +1,25 @@
 magic
 tech sky130A
-timestamp 1614594123
-use csrl  csrl_0
-timestamp 1614593100
+timestamp 1614679244
+use inverter-skinny  inverter-skinny_0
+timestamp 1614679043
 transform 1 0 45 0 1 15
-box -45 -15 280 1240
-use csrl  csrl_1
+box -190 5 -20 1240
+use csrl  csrl_3
 timestamp 1614593100
-transform 1 0 360 0 1 15
+transform 1 0 990 0 1 15
 box -45 -15 280 1240
 use csrl  csrl_2
 timestamp 1614593100
 transform 1 0 675 0 1 15
 box -45 -15 280 1240
-use csrl  csrl_3
+use csrl  csrl_1
 timestamp 1614593100
-transform 1 0 990 0 1 15
+transform 1 0 360 0 1 15
+box -45 -15 280 1240
+use csrl  csrl_0
+timestamp 1614593100
+transform 1 0 45 0 1 15
 box -45 -15 280 1240
 << labels >>
 rlabel space 0 30 0 30 7 CLK

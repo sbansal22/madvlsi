@@ -1,0 +1,8 @@
+* SPICE3 file created from /home/madvlsi/Desktop/madvlsi/MP2/layout/inverter-skinny.ext - technology: sky130A
+
+.subckt home/madvlsi/Desktop/madvlsi/MP2/layout/inverter-skinny VP D VN CLK Dn
+X0 VN D VN VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=150000u
+X1 VN D a_n340_1540# VP sky130_fd_pr__pfet_01v8 ad=9.75e+11p pd=5.9e+06u as=4.75e+11p ps=2.9e+06u w=950000u l=150000u
+X2 Dn D a_n340_2000# VP sky130_fd_pr__pfet_01v8 ad=4.275e+11p pd=2.8e+06u as=4.75e+11p ps=2.9e+06u w=950000u l=150000u
+.ends
+
