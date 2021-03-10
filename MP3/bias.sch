@@ -21,11 +21,10 @@ N 270 -530 290 -530 { lab=#net2}
 N 270 -540 270 -530 { lab=#net2}
 N 270 -580 270 -540 { lab=#net2}
 N 270 -580 320 -580 { lab=#net2}
-N 230 -620 290 -620 { lab=Vbp}
-N 290 -620 400 -620 { lab=Vbp}
-N 120 -620 230 -620 { lab=Vbp}
-N 260 -710 260 -620 { lab=Vbp}
-N 260 -710 530 -710 { lab=Vbp}
+N 230 -620 290 -620 { lab=#net3}
+N 290 -620 400 -620 { lab=#net3}
+N 120 -620 230 -620 { lab=#net3}
+N 260 -710 260 -620 { lab=#net3}
 N 90 -680 90 -650 { lab=VDD}
 N 90 -680 200 -680 { lab=VDD}
 N 200 -680 200 -650 { lab=VDD}
@@ -38,16 +37,16 @@ N 200 -590 200 -190 { lab=Vbn}
 N 230 -120 290 -120 { lab=Vbn}
 N 200 -170 250 -170 { lab=Vbn}
 N 250 -170 250 -120 { lab=Vbn}
-N 320 -190 320 -150 { lab=#net3}
-N 280 -170 320 -170 { lab=#net3}
-N 280 -220 280 -170 { lab=#net3}
-N 280 -220 290 -220 { lab=#net3}
-N 280 -290 280 -220 { lab=#net3}
-N 280 -300 290 -300 { lab=#net3}
-N 280 -300 280 -290 { lab=#net3}
-N 320 -270 320 -250 { lab=#net4}
-N 320 -260 470 -260 { lab=#net4}
-N 470 -260 470 -250 { lab=#net4}
+N 320 -190 320 -150 { lab=#net4}
+N 280 -170 320 -170 { lab=#net4}
+N 280 -220 280 -170 { lab=#net4}
+N 280 -220 290 -220 { lab=#net4}
+N 280 -290 280 -220 { lab=#net4}
+N 280 -300 290 -300 { lab=#net4}
+N 280 -300 280 -290 { lab=#net4}
+N 320 -270 320 -250 { lab=#net5}
+N 320 -260 470 -260 { lab=#net5}
+N 470 -260 470 -250 { lab=#net5}
 N 470 -190 470 -150 { lab=Vcp}
 N 470 -170 520 -170 { lab=Vcp}
 N 520 -220 520 -170 { lab=Vcp}
@@ -62,13 +61,14 @@ N 470 -90 470 -80 { lab=GND}
 N 290 -120 440 -120 { lab=Vbn}
 N 250 -120 250 -20 { lab=Vbn}
 N 250 -20 550 -20 { lab=Vbn}
-N 530 -710 550 -710 { lab=Vbp}
 N 530 -530 550 -530 { lab=Vcn}
 N 540 -220 550 -220 { lab=Vcp}
-N 90 -580 90 -570 {}
-N 90 -590 90 -580 {}
-N 130 -620 130 -580 {}
-N 90 -580 130 -580 {}
+N 90 -580 90 -570 { lab=#net3}
+N 90 -590 90 -580 { lab=#net3}
+N 130 -620 130 -580 { lab=#net3}
+N 90 -580 130 -580 { lab=#net3}
+N 260 -750 260 -710 { lab=#net3}
+N 40 -750 260 -750 { lab=#net3}
 C {madvlsi/pmos3.sym} 430 -620 0 0 {name=M1
 L=0.5
 W=12
@@ -271,7 +271,7 @@ C {madvlsi/gnd.sym} 90 -510 0 0 {name=l4 lab=GND}
 C {madvlsi/gnd.sym} 200 -60 0 0 {name=l5 lab=GND}
 C {madvlsi/isource.sym} 90 -540 0 0 {name=I1
 value=1u}
-C {devices/lab_pin.sym} 550 -710 2 0 {name=l6 sig_type=std_logic lab=Vbp}
+C {devices/lab_pin.sym} 40 -750 0 0 {name=l6 sig_type=std_logic lab=Vbp}
 C {devices/lab_pin.sym} 550 -530 2 0 {name=l7 sig_type=std_logic lab=Vcn}
 C {devices/lab_pin.sym} 550 -220 2 0 {name=l8 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} 550 -20 2 0 {name=l9 sig_type=std_logic lab=Vbn}
