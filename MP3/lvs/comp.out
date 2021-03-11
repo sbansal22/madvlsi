@@ -1,48 +1,43 @@
 Equate elements:  no current cell.
 Equate elements:  no current cell.
-Class bias-lds.spice:  Merged 13 devices.
+Class cascode-lds.spice:  Merged 21 devices.
 
 Subcircuit summary:
-Circuit 1: bias.spice                      |Circuit 2: bias-lds.spice                  
+Circuit 1: cascode.spice                   |Circuit 2: cascode-lds.spice               
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__pfet_01v8 (7)                |sky130_fd_pr__pfet_01v8 (7)                
-sky130_fd_pr__nfet_01v8 (6)                |sky130_fd_pr__nfet_01v8 (6)                
-isrc (1)                                   |isrc (1)                                   
-Number of devices: 14                      |Number of devices: 14                      
-Number of nets: 10                         |Number of nets: 10                         
+sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
+Number of devices: 11                      |Number of devices: 11                      
+Number of nets: 15                         |Number of nets: 15                         
 ---------------------------------------------------------------------------------------
 Circuits match uniquely.
 Property errors were found.
 Netlists match uniquely.
 There were property errors.
-sky130_fd_pr__nfet_01v8M11 vs. sky130_fd_pr__nfet_01v8M15:
+sky130_fd_pr__nfet_01v8M8 vs. sky130_fd_pr__nfet_01v8M2:
  W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__nfet_01v8M13 vs. sky130_fd_pr__nfet_01v8M16:
+sky130_fd_pr__nfet_01v8M11 vs. sky130_fd_pr__nfet_01v8M35:
  W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__nfet_01v8M12 vs. sky130_fd_pr__nfet_01v8M17:
+sky130_fd_pr__nfet_01v8M10 vs. sky130_fd_pr__nfet_01v8M34:
  W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__nfet_01v8M9 vs. sky130_fd_pr__nfet_01v8M21:
+sky130_fd_pr__nfet_01v8M9 vs. sky130_fd_pr__nfet_01v8M36:
  W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__nfet_01v8M8 vs. sky130_fd_pr__nfet_01v8M22:
+sky130_fd_pr__pfet_01v8M1 vs. sky130_fd_pr__pfet_01v8M1:
+ W circuit1: 12   circuit2: 96   (delta=156%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M7 vs. sky130_fd_pr__pfet_01v8M18:
  W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__nfet_01v8M10 vs. sky130_fd_pr__nfet_01v8M23:
+sky130_fd_pr__pfet_01v8M5 vs. sky130_fd_pr__pfet_01v8M19:
  W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M4 vs. sky130_fd_pr__pfet_01v8M1:
+sky130_fd_pr__pfet_01v8M4 vs. sky130_fd_pr__pfet_01v8M20:
  W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M3 vs. sky130_fd_pr__pfet_01v8M2:
+sky130_fd_pr__pfet_01v8M6 vs. sky130_fd_pr__pfet_01v8M21:
  W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M1 vs. sky130_fd_pr__pfet_01v8M3:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v8M4:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M5 vs. sky130_fd_pr__pfet_01v8M9:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M6 vs. sky130_fd_pr__pfet_01v8M10:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M7 vs. sky130_fd_pr__pfet_01v8M11:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M3 vs. sky130_fd_pr__pfet_01v8M26:
+ W circuit1: 12   circuit2: 48   (delta=120%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v8M27:
+ W circuit1: 12   circuit2: 48   (delta=120%, cutoff=1%)
 Cells have no pins;  pin matching not needed.
-Device classes bias.spice and bias-lds.spice are equivalent.
+Device classes cascode.spice and cascode-lds.spice are equivalent.
 Circuits match uniquely.
 Property errors were found.
-The following cells had property errors: bias.spice
+The following cells had property errors: cascode.spice

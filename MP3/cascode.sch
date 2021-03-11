@@ -17,8 +17,8 @@ N 480 -370 480 -340 { lab=#net3}
 N 480 -280 480 -250 { lab=#net2}
 N 480 -190 480 -160 { lab=#net4}
 N 590 -370 590 -340 { lab=#net5}
-N 590 -280 590 -250 { lab=xxx}
-N 590 -270 720 -270 { lab=xxx}
+N 590 -280 590 -250 { lab=Vout}
+N 590 -270 720 -270 { lab=Vout}
 N 590 -190 590 -160 { lab=#net6}
 N 480 -160 480 -130 { lab=#net4}
 N 590 -150 590 -130 { lab=#net6}
@@ -218,3 +218,4 @@ C {devices/lab_pin.sym} 430 -220 0 0 {name=l5 sig_type=std_logic lab=Vcn}
 C {devices/lab_pin.sym} 430 -100 0 0 {name=l6 sig_type=std_logic lab=Vbn}
 C {devices/lab_pin.sym} 720 -270 2 0 {name=l7 sig_type=std_logic lab=Vout}
 C {devices/lab_pin.sym} 290 -320 2 0 {name=l8 sig_type=std_logic lab=V2}
+C {devices/lab_pin.sym} 140 -400 0 0 {name=l9 sig_type=std_logic lab=Vbp}
