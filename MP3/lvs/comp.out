@@ -1,43 +1,62 @@
 Equate elements:  no current cell.
 Equate elements:  no current cell.
-Class cascode-lds.spice:  Merged 21 devices.
+Class cascode-lds.spice:  Merged 25 devices.
+Class folded_cascode_differential_amplifier_LDS.spice:  Merged 25 devices.
 
 Subcircuit summary:
-Circuit 1: cascode.spice                   |Circuit 2: cascode-lds.spice               
+Circuit 1: cascode-lds.spice               |Circuit 2: folded_cascode_differential_amp 
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (7)                |sky130_fd_pr__pfet_01v8 (7)                
-sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
-Number of devices: 11                      |Number of devices: 11                      
-Number of nets: 15                         |Number of nets: 15                         
+sky130_fd_pr__pfet_01v8 (10)               |sky130_fd_pr__pfet_01v8 (10)               
+sky130_fd_pr__nfet_01v8 (5)                |sky130_fd_pr__nfet_01v8 (5)                
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 17                         |Number of nets: 17                         
 ---------------------------------------------------------------------------------------
-Circuits match uniquely.
-Property errors were found.
-Netlists match uniquely.
-There were property errors.
-sky130_fd_pr__nfet_01v8M8 vs. sky130_fd_pr__nfet_01v8M2:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__nfet_01v8M11 vs. sky130_fd_pr__nfet_01v8M35:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__nfet_01v8M10 vs. sky130_fd_pr__nfet_01v8M34:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__nfet_01v8M9 vs. sky130_fd_pr__nfet_01v8M36:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M1 vs. sky130_fd_pr__pfet_01v8M1:
- W circuit1: 12   circuit2: 96   (delta=156%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M7 vs. sky130_fd_pr__pfet_01v8M18:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M5 vs. sky130_fd_pr__pfet_01v8M19:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M4 vs. sky130_fd_pr__pfet_01v8M20:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M6 vs. sky130_fd_pr__pfet_01v8M21:
- W circuit1: 12   circuit2: 24   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M3 vs. sky130_fd_pr__pfet_01v8M26:
- W circuit1: 12   circuit2: 48   (delta=120%, cutoff=1%)
-sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v8M27:
- W circuit1: 12   circuit2: 48   (delta=120%, cutoff=1%)
-Cells have no pins;  pin matching not needed.
-Device classes cascode.spice and cascode-lds.spice are equivalent.
-Circuits match uniquely.
-Property errors were found.
-The following cells had property errors: cascode.spice
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: cascode-lds.spice               |Circuit 2: folded_cascode_differential_amp 
+
+---------------------------------------------------------------------------------------
+Net: net2                                  |Net: net3                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: GND                                   |Net: GND                                   
+  sky130_fd_pr__nfet_01v8/4 = 5            |  sky130_fd_pr__nfet_01v8/4 = 5            
+                                           |                                           
+Net: net4                                  |Net: net6                                  
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: Vcn                                   |Net: Vcn                                   
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: net3                                  |Net: Vout                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: Vout                                  |Net: net2                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: cascode-lds.spice               |Circuit 2: folded_cascode_differential_amp 
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v8M36       |Instance: sky130_fd_pr__nfet_01v8M6a       
+  (1,3) = (4,3)                            |  (1,3) = (3,3)                            
+  2 = 2                                    |  2 = 2                                    
+  4 = 5                                    |  4 = 5                                    
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8M40       |Instance: sky130_fd_pr__nfet_01v8M5a       
+  (1,3) = (5,3)                            |  (1,3) = (5,4)                            
+  2 = 2                                    |  2 = 2                                    
+  4 = 5                                    |  4 = 5                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+The top level cell failed pin matching.
