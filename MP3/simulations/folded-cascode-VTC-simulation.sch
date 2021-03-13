@@ -6,18 +6,20 @@ S {}
 E {}
 N 6080 -360 6130 -360 { lab=#net1}
 N 6130 -360 6130 -260 { lab=#net1}
-N 6130 -260 6270 -260 { lab=#net1}
 N 6080 -400 6130 -400 { lab=#net2}
 N 6130 -460 6130 -400 { lab=#net2}
-N 6130 -460 6270 -460 { lab=#net2}
 N 6080 -320 6080 -200 { lab=#net3}
-N 6080 -200 6330 -200 { lab=#net3}
 N 5920 -360 5940 -360 { lab=Vbp}
 N 5920 -540 5920 -360 { lab=Vbp}
 N 5920 -540 6330 -540 { lab=Vbp}
 N 5900 -360 5920 -360 { lab=Vbp}
-N 6330 -540 6330 -460 {}
-N 6330 -260 6330 -200 {}
+N 6330 -540 6330 -460 { lab=Vbp}
+N 6330 -260 6330 -200 { lab=#net3}
+N 6150 -460 6270 -460 { lab=#net2}
+N 6240 -260 6270 -260 { lab=#net1}
+N 6130 -460 6150 -460 { lab=#net2}
+N 6130 -260 6240 -260 { lab=#net1}
+N 6080 -200 6330 -200 { lab=#net3}
 C {madvlsi/gnd.sym} 6010 -270 0 0 {name=l1 lab=GND}
 C {madvlsi/gnd.sym} 6300 -260 0 0 {name=l2 lab=GND}
 C {madvlsi/vdd.sym} 6010 -450 0 0 {name=l3 lab=VDD}
@@ -48,7 +50,7 @@ only_toplevel=false
 value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 6700 -280 0 0 {name=SPICE only_toplevel=false value=".dc V1 0 1.8 0.01 V2 0.1 0.9 0.2
+C {devices/code_shown.sym} 6700 -280 0 0 {name=SPICE only_toplevel=false value=".dc V1 0 1.8 0.0001 V2 0.1 0.9 0.2
 .save v(Vout) v(V1) v(V2)"}
 C {/home/madvlsi/Desktop/madvlsi/MP3/simulations/bias-lds.sym} 5830 -360 0 0 {name=X1}
 C {/home/madvlsi/Desktop/madvlsi/MP3/simulations/cascode-lds.sym} 6190 -360 0 0 {name=X2}
