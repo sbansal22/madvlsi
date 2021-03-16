@@ -1,4 +1,77 @@
+Flattening unmatched subcell bias in circuit differential-amplifier-with-bias.spice (0)(1 instance)
+Flattening unmatched subcell cascode in circuit differential-amplifier-with-bias.spice (0)(1 instance)
+Flattening unmatched subcell bias-lds in circuit differential-amplifier-with-bias-xschem.spice (1)(1 instance)
+Flattening unmatched subcell cascode-lds in circuit differential-amplifier-with-bias-xschem.spice (1)(1 instance)
 Equate elements:  no current cell.
 Equate elements:  no current cell.
-Equate elements:  no current cell.
+Class differential-amplifier-with-bias.spice:  Merged 51 devices.
+Class differential-amplifier-with-bias-xschem.spice:  Merged 48 devices.
+
+Subcircuit summary:
+Circuit 1: differential-amplifier-with-bia |Circuit 2: differential-amplifier-with-bia 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (13)               |sky130_fd_pr__nfet_01v8 (13)               
+sky130_fd_pr__pfet_01v8 (16)               |sky130_fd_pr__pfet_01v8 (19) **Mismatch**  
+Number of devices: 29 **Mismatch**         |Number of devices: 32 **Mismatch**         
+Number of nets: 18 **Mismatch**            |Number of nets: 23 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: differential-amplifier-with-bia |Circuit 2: differential-amplifier-with-bia 
+
+---------------------------------------------------------------------------------------
+Net: bias_0/VP                             |Net: cascode-lds2/GND                      
+  sky130_fd_pr__pfet_01v8/4 = 16           |  sky130_fd_pr__nfet_01v8/4 = 5            
+  sky130_fd_pr__pfet_01v8/(1|3) = 11       |                                           
+  sky130_fd_pr__pfet_01v8/2 = 7            |                                           
+                                           |                                           
+Net: VSUBS                                 |Net: Vbp                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 10       |  sky130_fd_pr__pfet_01v8/2 = 5            
+  sky130_fd_pr__nfet_01v8/4 = 13           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/2 = 3            |                                           
+                                           |                                           
+(no matching net)                          |Net: VP                                    
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 15       
+                                           |  sky130_fd_pr__pfet_01v8/2 = 5            
+                                           |                                           
+(no matching net)                          |Net: VN                                    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 10       
+                                           |  sky130_fd_pr__nfet_01v8/2 = 3            
+                                           |                                           
+(no matching net)                          |Net: bias-lds1/VDD                         
+                                           |  sky130_fd_pr__pfet_01v8/4 = 9            
+                                           |                                           
+(no matching net)                          |Net: bias-lds1/GND                         
+                                           |  sky130_fd_pr__nfet_01v8/4 = 8            
+                                           |                                           
+(no matching net)                          |Net: cascode-lds2/VDD                      
+                                           |  sky130_fd_pr__pfet_01v8/4 = 10           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: differential-amplifier-with-bia |Circuit 2: differential-amplifier-with-bia 
+
+---------------------------------------------------------------------------------------
+Instance: bias_0/sky130_fd_pr__pfet_01v83  |Instance: bias-lds1/sky130_fd_pr__pfet_01v 
+  (1,3) = (34,34)                          |  (1,3) = (20,7)                           
+  2 = 34                                   |  2 = 7                                    
+  4 = 34                                   |  4 = 9                                    
+                                           |                                           
+(no matching instance)                     |Instance: bias-lds1/sky130_fd_pr__pfet_01v 
+                                           |  (1,3) = (20,7)                           
+                                           |  2 = 20                                   
+                                           |  4 = 9                                    
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: bias-lds1/sky130_fd_pr__pfet_01v 
+                                           |  (1,3) = (20,20)                          
+                                           |  2 = 20                                   
+                                           |  4 = 9                                    
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: cascode-lds2/sky130_fd_pr__pfet_ 
+                                           |  (1,3) = (20,20)                          
+                                           |  2 = 20                                   
+                                           |  4 = 10                                   
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
 The top level cell failed pin matching.
