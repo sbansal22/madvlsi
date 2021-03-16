@@ -1,11 +1,11 @@
-timestamp 1615929163
+timestamp 1615930048
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use cascode cascode_0 1 0 4260 0 1 1030
 use bias bias_0 1 0 140 0 1 -1340
+use cascode cascode_0 1 0 4260 0 1 1030
 node "m1_2730_120#" 2 577.96 2730 120 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 94400 2520 0 0 0 0 0 0 0 0 0 0
 node "m1_2730_3570#" 5 1418.8 2730 3570 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 240000 6160 0 0 0 0 0 0 0 0 0 0
 node "li_2740_20#" 18 57.22 2740 20 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 200 0 0 0 0 0 0 0 0 0 0 0 0
@@ -14,45 +14,45 @@ node "li_2740_3390#" 18 57.22 2740 3390 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_2740_6630#" 18 57.22 2740 6630 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 200 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_0_3490#" 156400 248.4 0 3490 nw 0 0 0 0 82800 5580 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "li_2740_3390#" "li_2740_3210#" 14.1429
+cap "li_2740_3210#" "li_2740_3390#" 14.1429
 subcap "m1_2730_120#" -788.11
-cap "cascode_0/a_n1160_n920#" "cascode_0/VN" 51.2368
+cap "cascode_0/VN" "cascode_0/a_n1160_n920#" 51.2368
 subcap "m1_2730_120#" -2574.34
 cap "cascode_0/VN" "cascode_0/a_n1160_n920#" 51.2368
-cap "cascode_0/VN" "cascode_0/Vbn" 222.207
-cap "cascode_0/Vbn" "cascode_0/VN" 222.207
+cap "bias_0/VN" "cascode_0/Vbn" 222.207
+cap "cascode_0/Vbn" "bias_0/VN" 222.207
 cap "w_0_3490#" "bias_0/a_600_4900#" 15.2625
+cap "bias_0/VN" "bias_0/Vbn" 83.2116
 cap "cascode_0/V2" "bias_0/a_600_4900#" 17.4825
-cap "bias_0/VN" "cascode_0/Vbn" 83.2116
-cap "cascode_0/V2" "cascode_0/Vout" 25.6184
-cap "cascode_0/Vbn" "cascode_0/Vcp" 1.06581e-14
-cap "cascode_0/Vout" "cascode_0/Vcp" 1.06452
-subcap "m1_2730_3570#" -1640.65
-cap "cascode_0/Vbn" "bias_0/VN" 83.2116
+cap "cascode_0/Vout" "bias_0/Vcp" 1.06452
 cap "cascode_0/Vout" "cascode_0/V2" 25.6184
-cap "cascode_0/V2" "cascode_0/a_n1160_4250#" 7.38158
-cap "bias_0/Vbp" "cascode_0/V2" 11.7237
+cap "bias_0/Vcp" "bias_0/Vbn" 1.06581e-14
+subcap "m1_2730_3570#" -1640.65
+cap "bias_0/VN" "bias_0/Vbn" 83.2116
+cap "cascode_0/Vout" "cascode_0/V2" 25.6184
 cap "cascode_0/V2" "cascode_0/Vout" 24.3158
-cap "cascode_0/V2" "bias_0/Vbp" 11.7237
-cap "cascode_0/Vout" "cascode_0/V2" 24.3158
+cap "bias_0/Vbp" "cascode_0/V2" 11.7237
 cap "cascode_0/a_n1160_4250#" "cascode_0/V2" 7.38158
+cap "cascode_0/V2" "cascode_0/a_n1160_4250#" 7.38158
+cap "cascode_0/V2" "cascode_0/Vout" 24.3158
+cap "bias_0/Vbp" "cascode_0/V2" 11.7237
 subcap "li_2740_6630#" -288.84
-cap "cascode_0/VP" "cascode_0/a_n1160_4250#" 13.4605
-cap "cascode_0/VP" "cascode_0/Vbp" 25.6184
-cap "cascode_0/Vbp" "cascode_0/VP" 25.6184
-cap "cascode_0/a_n1160_4250#" "cascode_0/VP" 13.4605
-merge "cascode_0/VN" "m1_2730_120#" -702.83 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59600 -4740 0 0 0 0 0 0 0 0 0 0
-merge "m1_2730_120#" "bias_0/VN"
+cap "bias_0/VP" "bias_0/Vbp" 25.6184
+cap "bias_0/VP" "cascode_0/a_n1160_4250#" 13.4605
+cap "bias_0/Vbp" "bias_0/VP" 25.6184
+cap "cascode_0/a_n1160_4250#" "bias_0/VP" 13.4605
+merge "cascode_0/VN" "bias_0/VN" -702.83 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59600 -4740 0 0 0 0 0 0 0 0 0 0
 merge "bias_0/VN" "VSUBS"
-merge "cascode_0/VP" "cascode_0/V2" -1250.69 0 0 0 0 0 -2140 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 -240 -166420 -5070 0 0 0 0 0 0 0 0 0 0
-merge "cascode_0/V2" "bias_0/Vbp"
-merge "bias_0/Vbp" "w_0_3490#"
+merge "VSUBS" "m1_2730_120#"
+merge "cascode_0/VP" "cascode_0/V2" -3097.23 0 0 0 0 1200 -9020 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -86820 -15040 0 0 0 0 0 0 0 0 0 0
+merge "cascode_0/V2" "bias_0/VP"
+merge "bias_0/VP" "w_0_3490#"
 merge "w_0_3490#" "m1_2730_3570#"
-merge "m1_2730_3570#" "cascode_0/Vbp"
-merge "cascode_0/Vbp" "li_2740_6630#"
-merge "bias_0/Vcp" "cascode_0/Vcp" -39.03 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 -240 0 0 0 0 0 0 0 0 0 0 0 0
-merge "cascode_0/Vcp" "li_2740_3390#"
-merge "bias_0/Vcn" "cascode_0/Vcn" -63.78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 -240 0 0 0 0 0 0 0 0 0 0 0 0
-merge "cascode_0/Vcn" "li_2740_20#"
-merge "bias_0/Vbn" "cascode_0/Vbn" -63.78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 -240 0 0 0 0 0 0 0 0 0 0 0 0
-merge "cascode_0/Vbn" "li_2740_3210#"
+merge "cascode_0/Vcp" "bias_0/Vcp" -39.03 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "bias_0/Vcp" "li_2740_3390#"
+merge "cascode_0/Vcn" "bias_0/Vcn" -63.78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "bias_0/Vcn" "li_2740_20#"
+merge "cascode_0/Vbn" "bias_0/Vbn" -63.78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "bias_0/Vbn" "li_2740_3210#"
+merge "cascode_0/Vbp" "bias_0/Vbp" -63.78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "bias_0/Vbp" "li_2740_6630#"

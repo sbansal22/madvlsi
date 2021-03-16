@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1615929163
+timestamp 1615930413
 << nwell >>
 rect 0 1745 1380 1760
 << locali >>
@@ -11,12 +11,12 @@ rect 1370 10 1400 30
 << metal1 >>
 rect 1365 1785 1405 3285
 rect 1365 60 1405 650
+use bias  bias_0
+timestamp 1615930048
+transform 1 0 70 0 1 -670
+box -70 670 1320 4005
 use cascode  cascode_0
 timestamp 1615929122
 transform 1 0 2130 0 1 515
 box -750 -535 440 2850
-use bias  bias_0
-timestamp 1615928764
-transform 1 0 70 0 1 -670
-box -70 670 1320 4005
 << end >>
